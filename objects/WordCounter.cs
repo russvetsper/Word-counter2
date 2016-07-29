@@ -14,12 +14,19 @@ namespace WordCounter.Objects
       _word = word;
     }
 
+
     public int CountRepeats()
     {
-      //CHANGE THIS CODE TO PASS THE TEST
+    if(this._word == this._sentence)
+    {
+
       return 1;
+    }else{
+      return 0;
     }
 
-//END OF CLASS
+
+
   }
+}
 }

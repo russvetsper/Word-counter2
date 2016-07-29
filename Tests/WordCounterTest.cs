@@ -4,12 +4,9 @@ using System;
 
 namespace WordCounter.Objects
 {
-  public class WordTest : IDisposable
+  public class WordTest
   {
-    public void Dispose()
-    {
 
-    }
 
     [Fact]
     public void Test1_CoutRepeats_FindsOneWords_true()
