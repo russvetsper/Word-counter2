@@ -19,8 +19,9 @@ namespace WordCounter.Objects
       Assert.Equal(1, result);
     }
 
+
     [Fact]
-    public void Test1_CoutRepeats_DoesntFindOneWords_true()
+    public void Test2_CoutRepeats_DoesntFindOneWords_true()
     {
       //Arrange
       WordCounter newWordCounter = new WordCounter("A", "B");
@@ -29,6 +30,18 @@ namespace WordCounter.Objects
       //Assert
       Assert.Equal(0, result);
     }
+
+    [Fact]
+    public void Test3_CoutRepeats_FindsTwoWords_true()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("a a b", "a");
+      //Act
+      int result = newWordCounter.CountRepeats();
+      //Assert
+      Assert.Equal(2, result);
+    }
+
 
   }
 }

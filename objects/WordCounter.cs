@@ -10,23 +10,28 @@ namespace WordCounter.Objects
 
     public WordCounter(string sen, string word)
     {
-      _sentence = sen;
-      _word = word;
+      _sentence = sen.ToLower();
+      _word = word.ToLower();
     }
 
 
     public int CountRepeats()
-    {
-    if(this._word == this._sentence)
-    {
+   {
+     var count=0;
+      string mySentence=this._sentence;
+      string[] myArry=mySentence.Split(' ');
+      for (int i=0; i<myArry.Length; i++) {
 
-      return 1;
-    }else{
-      return 0;
-    }
+      if(myArry[i]==this._word)
+      {
+        count=count+1;
+      }
+         }
+         return count;
+      }
+
 
 
 
   }
-}
 }
