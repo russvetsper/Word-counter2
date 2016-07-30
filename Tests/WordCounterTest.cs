@@ -53,7 +53,7 @@ namespace WordCounter.Objects
       Assert.Equal(1, result);
     }
 
-    // [Fact]
+    // [Fact]      
     // public void Test5_CoutRepeats_FindsSentence_true()
     // {
     //   //Arrange
