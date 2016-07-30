@@ -42,6 +42,26 @@ namespace WordCounter.Objects
       Assert.Equal(2, result);
     }
 
+    [Fact]
+    public void Test4_CoutRepeats_FindsOneWord_true()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("how are you", "how");
+      //Act
+      int result = newWordCounter.CountRepeats();
+      //Assert
+      Assert.Equal(1, result);
+    }
 
+    [Fact]
+    public void Test5_CoutRepeats_FindsSentence_true()
+    {
+      //Arrange
+      WordCounter newWordCounter = new WordCounter("ilikesummer","ilikesummer");
+      //Act
+      int result = newWordCounter.CountRepeats();
+      //Assert
+      Assert.Equal(1, result);
+    }
   }
 }

@@ -14,9 +14,9 @@ namespace WordCounter.Objects
       _word = word.ToLower();
     }
 
-
     public int CountRepeats()
    {
+     st = st.Replace(" ", string.Empty);
      var count=0;
       string mySentence=this._sentence;
       string[] myArry=mySentence.Split(' ');
