@@ -14,7 +14,7 @@ namespace WordCounter.Objects
       //Arrange
       WordCounter newWordCounter = new WordCounter("A", "A");
       //Act
-      int result = newWordCounter.CountRepeats();
+      int result = newWordCounter.CountRepeat();
       //Assert
       Assert.Equal(1, result);
     }
@@ -26,7 +26,7 @@ namespace WordCounter.Objects
       //Arrange
       WordCounter newWordCounter = new WordCounter("A", "B");
       //Act
-      int result = newWordCounter.CountRepeats();
+      int result = newWordCounter.CountRepeat();
       //Assert
       Assert.Equal(0, result);
     }
@@ -37,7 +37,7 @@ namespace WordCounter.Objects
       //Arrange
       WordCounter newWordCounter = new WordCounter("a a b", "a");
       //Act
-      int result = newWordCounter.CountRepeats();
+      int result = newWordCounter.CountRepeat();
       //Assert
       Assert.Equal(2, result);
     }
@@ -48,12 +48,12 @@ namespace WordCounter.Objects
       //Arrange
       WordCounter newWordCounter = new WordCounter("how are you", "how");
       //Act
-      int result = newWordCounter.CountRepeats();
+      int result = newWordCounter.CountRepeat();
       //Assert
       Assert.Equal(1, result);
     }
 
-    // [Fact]      
+    // [Fact]
     // public void Test5_CoutRepeats_FindsSentence_true()
     // {
     //   //Arrange
@@ -70,7 +70,7 @@ namespace WordCounter.Objects
       //Arrange
       WordCounter newWordCounter = new WordCounter("how are you", "HOW");
       //Act
-      int result = newWordCounter.CountRepeats();
+      int result = newWordCounter.CountRepeat();
       //Assert
       Assert.Equal(1, result);
     }
