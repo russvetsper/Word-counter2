@@ -10,9 +10,33 @@ namespace WordCounter.Objects
 
     public WordCounter(string sen, string word)
     {
-      _sentence = sen;
+      _sentence = sen.ToLower();
+      _word = word.ToLower();
+    }
+
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+
+
+    public void SetSentence(string sentence)
+    {
+      _sentence = sentence;
+    }
+
+    public string GetWord()
+    {
+      return _word;
+    }
+
+
+    public void SetWord(string word)
+    {
       _word = word;
     }
+
+
 
     public int CountRepeats()
    {
