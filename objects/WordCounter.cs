@@ -10,13 +10,13 @@ namespace WordCounter.Objects
 
     public WordCounter(string sen, string word)
     {
-      _sentence = sen.ToLower();
-      _word = word.ToLower();
+      _sentence = sen;
+      _word = word;
     }
 
     public int CountRepeats()
    {
-     st = st.Replace(" ", string.Empty);
+
      var count=0;
       string mySentence=this._sentence;
       string[] myArry=mySentence.Split(' ');

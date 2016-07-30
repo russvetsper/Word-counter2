@@ -53,15 +53,27 @@ namespace WordCounter.Objects
       Assert.Equal(1, result);
     }
 
+    // [Fact]
+    // public void Test5_CoutRepeats_FindsSentence_true()
+    // {
+    //   //Arrange
+    //   WordCounter newWordCounter = new WordCounter("i like summer","i like summer");
+    //   //Act
+    //   int result = newWordCounter.CountRepeats();
+    //   //Assert
+    //   Assert.Equal(1, result);
+    // }
+
     [Fact]
-    public void Test5_CoutRepeats_FindsSentence_true()
+    public void Test5_compareCapitalTOSmall_fail()
     {
       //Arrange
-      WordCounter newWordCounter = new WordCounter("ilikesummer","ilikesummer");
+      WordCounter newWordCounter = new WordCounter("how are you", "HOW");
       //Act
       int result = newWordCounter.CountRepeats();
       //Assert
       Assert.Equal(1, result);
     }
+
   }
 }
