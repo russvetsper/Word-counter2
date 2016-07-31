@@ -1,8 +1,8 @@
 using Xunit;
-using System.Collections.Generic;
+// using System.Collections.Generic;
 using System;
 
-namespace WordCounter.Objects
+namespace WordCountering
 {
   public class WordTest
   {

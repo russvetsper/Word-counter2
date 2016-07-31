@@ -1,7 +1,7 @@
 using Nancy;
-using System.Collections.Generic;
+// using System.Collections.Generic;
 
-namespace WordCounter
+namespace WordCountering
 {
   public class HomeModule : NancyModule
   {
@@ -12,9 +12,9 @@ namespace WordCounter
       };
 
       Post["/result"] = _ => {
-    
-        return View["results.cshtml"];
+        WordCounter  newWord = new WordCounter  ( Request.Form["new-word"], Request.Form["new-sentence"]);
+        return View["results.cshtml", newWord];
       };
- }
-}
+    }
+  }
 }
